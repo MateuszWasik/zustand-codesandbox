@@ -7,8 +7,9 @@ import { TodoListContainer } from "././todo-list/container";
 export default function App() {
   return (
     <div className="App">
+      <h1>Zustand Test App</h1>
       <div>
-        <h1>Zustand Test App</h1>
+        <h2>Counter</h2>
         <CounterApp />
         <Control />
         <ClearCounter />
@@ -19,7 +20,7 @@ export default function App() {
       </div>
 
       <div>
-        <h1>ToDo List</h1>
+        <h2>ToDo List</h2>
         <TodoListContainer />
       </div>
     </div>

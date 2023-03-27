@@ -9,15 +9,12 @@ export const RowElement = ({ index, value }: RowElementProps) => {
   const deleteRow = useTodoListStore((state) => state.deleteFromTheList);
 
   const handleOnClick = () => {
-    console.log("this is value", value, " and index: ", index);
     deleteRow(index);
   };
   return (
-    <li>
-      <div>
-        <span>{value}</span>
-        <button onClick={handleOnClick}>X</button>
-      </div>
+    <li style={{ display: "flex", justifyContent: "center", margin: "10px" }}>
+      <span style={{ marginRight: "5px" }}>{value}</span>
+      <button onClick={handleOnClick}>X</button>
     </li>
   );
 };
